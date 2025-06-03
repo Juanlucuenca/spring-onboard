@@ -71,7 +71,6 @@ public class AuthorController {
     }
     
     @GetMapping("/search/name") 
-
     public ResponseEntity<List<AuthorResponseDto>> searchAuthorsByName(
             @Parameter(description = "Name to search for", example = "Garcia")
             @RequestParam String name) {
